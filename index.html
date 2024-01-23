@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjustable Font Size</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="app">
+  <h1 id="mainHeading">Welcome to My Website</h1>
+
+  <div class="font-size-controls">
+    <label for="fontSizeSelector">Adjust Font Size:</label>
+    <select id="fontSizeSelector" onchange="changeFontSize(this.value)">
+      <option value="small">medium</option>
+      <option value="medium">large</option>
+      <option value="large">small</option>
+    </select>
+  </div>
+
+  <p>This is some sample content on your website.</p>
+
+  <script src="index.js"></script>
+</div>
+
+</body>
+</html>
